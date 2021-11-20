@@ -11,9 +11,17 @@ public class Book {
     private int noOfPages;
 //    @Autowired
     List<Author> authors;
+    private Publisher publisher;
 
     public Book() {
         System.out.println("I am in constructor");
+    }
+
+    public Book(String title, int noOfPages, List<Author> authors, Publisher publisher) {
+        this.title = title;
+        this.noOfPages = noOfPages;
+        this.authors = authors;
+        this.publisher = publisher;
     }
 
     public String getTitle() {
